@@ -7,10 +7,12 @@ def main() -> None:
         timeout=10,
     )
     r.raise_for_status()
-    print(r.json()["joke"])
+    print("Here is a joke", r.json()["joke"])
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
